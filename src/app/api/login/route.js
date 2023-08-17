@@ -1,8 +1,7 @@
 import { NextResponse } from "next/server";
 import { User } from "@/models/user";
 import bcrypt from "bcryptjs";
-// import jwt from "jsonwebtoken";
-const jwt = require("jsonwebtoken");
+import jwt from "jsonwebtoken";
 
 export async function POST(request) {
   console.log("login api");

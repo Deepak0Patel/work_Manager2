@@ -32,25 +32,25 @@ const CustomNavbar = () => {
       </div>
       <div>
         <ul className="flex space-x-5">
-          {context.user && (
-            <>
-              <li>
-                <Link href={"/"} className="hover:text-blue-200">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link href="/add-task" className="hover:text-blue-200">
-                  Add Task
-                </Link>
-              </li>
-              <li>
-                <Link href={"/show-tasks"} className="hover:text-blue-200">
-                  Show Tasks
-                </Link>
-              </li>
-            </>
-          )}
+          {/* {context.user && (
+            <> */}
+          <li>
+            <Link href={"/"} className="hover:text-blue-200">
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link href="/add-task" className="hover:text-blue-200">
+              Add Task
+            </Link>
+          </li>
+          <li>
+            <Link href={"/show-tasks"} className="hover:text-blue-200">
+              Show Tasks
+            </Link>
+          </li>
+          {/* </>
+          )} */}
         </ul>
       </div>
       <div>
