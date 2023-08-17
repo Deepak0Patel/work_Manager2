@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
-import jwt from "jsonwebtoken";
+// import jwt from "jsonwebtoken";
 import { User } from "@/models/user";
+const jwt = require("jsonwebtoken");
 export async function GET(request) {
   try {
     const authToken = request.cookies.get("authToken")?.value;
